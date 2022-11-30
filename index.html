@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validsubmit</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4 offset-md-2 bg-secondary">
+                <h2 style="margin-top: 30px; text-align: center;color:whitesmoke;">Form Validation</h2> <br> <br>
+                <form id="form">
+                    <div class="form-post mb-5">
+                        <i class="fas fa-user"></i><input  type="text" placeholder="Name" name=""  id="name" class="form1">
+                        <p style="color: red;" id="nameError"></p>
+                    </div>
+                    <div class="form-post mb-5">
+                       <i class="fas fa-envelope"></i>  <input type="email" name="" placeholder="Email"  id="email" class="form2">
+                        <p style="color:red;" id="emailError"></p>
+                    </div>
+                    <div class="form-post mb-5">
+                        <i class="fas fa-phone"></i>  <input type="text" name="" placeholder="Phone Number" id="number"  class="form3">
+                        <p style="color:red;" id="numberError"></p>
+                    </div>
+                    <div class="form-post">
+                        <i class="fas fa-home"></i><input type="text" placeholder="Address"  name="" id="address" class="form4"> 
+                        <p style="color:red;" id="addressError"></p>
+                    </div> <br>
+                    <div class="form-post">
+                        <input type="submit"  id=""  value="Sign in">
+                    </div> <br> <br>
+                </form>
+               
+            </div>
+                    <div class="col-sm-3 mt-5"> <br>
+                        <h2 style="text-align:center;"></h2>
+                        <div style="background-color:lightgrey; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);" class="card">
+                               <img src="images/winning.jfif" width="50%" alt="" class="card"  class="img-fluid rounded-top" > <br> <br> <br>
+                               <span>Name:     <p id="validName"></p></span>
+                               <span>Email:    <p id="validEmail"></p></span> 
+                               <span>Phone:    <p id="validNumber"></p></span> 
+                               <span>Address:  <p id="validAddress"></p></span> 
+                        </div>
+                    </div>
+        </div>
+    </div>
+
+
+    <script src="style.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
